@@ -1,0 +1,19 @@
+body {
+  background-color: lightblue;
+  margin-left: 20px;
+
+}
+
+h1 {
+  color: navy;
+}
+
+#sqlDBOFF {
+  margin-right: auto;
+  background-color: #FF4500;
+}
+
+#sqlDBON {
+  display: block;
+  background-color: #7FFF00;
+}
