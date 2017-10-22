@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <?php
-$server = "127.0.0.1:3306";
-$user = "root";
-$pass = "dematicAGV";
-$db = "db_timetrack";
+$server = "shareddb1c.hosting.stackcp.net";
+$user = "dbTimeTracker";
+$pass = "2017AGVdematic";
+$db = "dbTimeTracker-31361948"
 
 $link = mysqli_connect($server, $user, $pass, $db);
 
