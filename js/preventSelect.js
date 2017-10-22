@@ -1,5 +1,3 @@
-window.onload =  preventSelect();
-
 function preventSelect() {
   var owner     = document.getElementById('owner');
   var customer  = document.getElementById('customer');
@@ -14,3 +12,5 @@ function preventSelect() {
   }
 
 }
+
+window.onload =  preventSelect();

@@ -1,6 +1,10 @@
-
 <?php
-$link = mysqli_connect("127.0.0.1:3306", "root", "dematicAGV", "db_timetrack");
+$server = "shareddb1c.hosting.stackcp.net";
+$user = "dbTimeTracker-31361948";
+$pass = "dematicAGV123";
+$db = "dbTimeTracker-31361948";
+
+$link = mysqli_connect($server, $user, $pass, $db);
 
 if (!$link) {
     echo "Error: Unable to connect to MySQL." . PHP_EOL;
@@ -19,7 +23,7 @@ if ($result = $link->query("SELECT DATABASE()")) {
     $result->close();
 }
 
-$result = mysqli_query($link,"SELECT distinct Client FROM db_timetrack.tbl_jobinfo;"); // run the query and assign the result to $result
+$result = mysqli_query($link,"SELECT distinct Client FROM tbl_jobinfo"); // run the query and assign the result to $result
 while($table = mysqli_fetch_array($result)) { // go through each row that was returned in $result
     echo($table[0] . "<BR>");    // print the table that was returned on that row.
 }
